@@ -10,7 +10,7 @@ PYLIBS = $(shell $(PYTHON_CONFIG) --ldflags)
 TARGET = mymodule$(shell $(PYTHON_CONFIG) --extension-suffix)
 
 # The source file
-SRC = mymodule.c
+SRC = python_bindings/mymodule.c
 
 # Compile and link the shared library
 $(TARGET): $(SRC)
